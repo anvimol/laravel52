@@ -9,6 +9,7 @@ body {
 .navbar {
 	border-radius: 0;
 	border: 0;
+	margin-bottom: 0;
 }
 
 .navbar-top a {
@@ -26,4 +27,8 @@ body {
 	background: #E7E7E7 !important;
 	color: #033145 !important;
 	border-top: 3px solid #CE4844;
+}
+
+.carousel-caption {
+	font-size: 25px;
 }

@@ -6,10 +6,13 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class PruebaController extends Controller
+use App\Nav;
+
+class IndexController extends Controller
 {
     public function index()
     {
-    	return view('phpinfo');
+    	$navs = Nav::all();
+        return view('welcome', ['navs' => $navs]);
     }
 }

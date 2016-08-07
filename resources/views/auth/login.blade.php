@@ -1,9 +1,5 @@
 @extends('layouts.app')
 
-@section('footer')
-<h2>Aqui el footer</h2>
-@endsection
-
 @section('content')
 <div class="container">
     <div class="row">

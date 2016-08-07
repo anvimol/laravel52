@@ -25,13 +25,17 @@
 		    </div>
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    	<ul class="nav navbar-nav">
-					<li><a class="active" href="#">Inicio</a></li>
-					<li><a href="#">Secciones</a></li>
-					<li><a href="#">Perfil</a></li>
-		    	</ul>
+		     		@foreach ($navs as $nav)
+		     			<li><a href="{{ $nav->url }}">{{ $nav->name }}</a></li>
+		     		@endforeach
+		     	</ul>
 		    </div>
 		  </div>
 		</nav>
+	</div>
+
+	<div class="container">
+		@yield('content')
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

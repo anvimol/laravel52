@@ -11,23 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('prueba/{nombre}', function ($nombre) {
-    return "Hola " . $nombre;
-});
+Route::get('/', 'IndexController@index');
 
-
-
-Route::get('dashboard', function () {
-	    return view('welcome');
-	});
-
-Route::get('prueba', 'PruebaController@index');
-
-Route::resource('rest', 'RestController');
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('adm', function() {
+	return view('admin.index');
+});
