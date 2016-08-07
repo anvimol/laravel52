@@ -1,0 +1,29 @@
+body {
+	background: #B6B6B6;
+}
+
+.navbar-top {
+	background: #033145 !important;
+}
+
+.navbar {
+	border-radius: 0;
+	border: 0;
+}
+
+.navbar-top a {
+	color: #FFF !important;
+	border-top: 3px solid #033145;
+}
+
+.navbar-top a:hover {
+	background: #F8F8F8 !important;
+	color: #033145 !important;
+	border-top: 3px solid #CE4844;
+}
+
+.navbar-top .active {
+	background: #E7E7E7 !important;
+	color: #033145 !important;
+	border-top: 3px solid #CE4844;
+}
